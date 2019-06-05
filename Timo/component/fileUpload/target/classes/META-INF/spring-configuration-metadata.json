@@ -1,0 +1,23 @@
+{
+  "groups": [
+    {
+      "name": "project.upload",
+      "type": "com.linln.component.fileUpload.config.properties.UploadProjectProperties",
+      "sourceType": "com.linln.component.fileUpload.config.properties.UploadProjectProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "project.upload.file-path",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.component.fileUpload.config.properties.UploadProjectProperties"
+    },
+    {
+      "name": "project.upload.static-path",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.component.fileUpload.config.properties.UploadProjectProperties",
+      "defaultValue": "\/upload\/**"
+    }
+  ],
+  "hints": []
+}

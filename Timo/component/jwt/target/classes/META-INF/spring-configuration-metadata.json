@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "project.jwt",
+      "type": "com.linln.component.jwt.config.properties.JwtProjectProperties",
+      "sourceType": "com.linln.component.jwt.config.properties.JwtProjectProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "project.jwt.expired",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.component.jwt.config.properties.JwtProjectProperties",
+      "defaultValue": 3
+    },
+    {
+      "name": "project.jwt.pattern-anno",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linln.component.jwt.config.properties.JwtProjectProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "project.jwt.pattern-path",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linln.component.jwt.config.properties.JwtProjectProperties",
+      "defaultValue": false
+    },
+    {
+      "name": "project.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.component.jwt.config.properties.JwtProjectProperties",
+      "defaultValue": "mySecret"
+    }
+  ],
+  "hints": []
+}

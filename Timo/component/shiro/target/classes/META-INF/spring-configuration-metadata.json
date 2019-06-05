@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "name": "project.shiro",
+      "type": "com.linln.component.shiro.config.properties.ShiroProjectProperties",
+      "sourceType": "com.linln.component.shiro.config.properties.ShiroProjectProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "project.shiro.global-session-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.component.shiro.config.properties.ShiroProjectProperties",
+      "defaultValue": 1800
+    },
+    {
+      "name": "project.shiro.remember-me-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.component.shiro.config.properties.ShiroProjectProperties",
+      "defaultValue": 7
+    },
+    {
+      "name": "project.shiro.session-validation-interval",
+      "type": "java.lang.Integer",
+      "sourceType": "com.linln.component.shiro.config.properties.ShiroProjectProperties",
+      "defaultValue": 900
+    }
+  ],
+  "hints": []
+}

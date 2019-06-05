@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
+</head>
+<body>
+    <div class="timo-detail-page">
+        <div class="timo-detail-title">基本信息</div>
+        <table class="layui-table timo-detail-table">
+            <colgroup>
+                <col width="100px"><col>
+                <col width="100px"><col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>主键ID</th>
+                    <td th:text="${support.id}"></td>
+                    <th>标题</th>
+                    <td th:text="${support.title}"></td>
+                </tr>
+                <tr>
+                    <th>投诉类型</th>
+                    <td th:text="${support.supportTpye}"></td>
+                    <th>投诉商品</th>
+                    <td th:text="${support.goodsName}"></td>
+                </tr>
+                <tr>
+                    <th>商品ID</th>
+                    <td th:text="${support.goodsId}"></td>
+                    <th>联系方式</th>
+                    <td th:text="${support.supportlink}"></td>
+                </tr>
+                <tr>
+                    <th>创建者</th>
+                    <td th:text="${support.createBy?.nickname}"></td>
+                    <th>更新者</th>
+                    <td th:text="${support.updateBy?.nickname}"></td>
+                </tr>
+                <tr>
+                    <th>投诉时间</th>
+                    <td th:text="${#dates.format(support.createDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                    <th>更新时间</th>
+                    <td th:text="${#dates.format(support.updateDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                </tr>
+                <tr>
+                    <th>投诉内容</th>
+                    <td th:text="${support.remark}" colspan="3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script th:replace="/common/template :: script"></script>
+</body>
+</html>
