@@ -12,7 +12,10 @@ import com.linln.component.actionLog.action.UserAction;
 import com.linln.component.actionLog.annotation.ActionLog;
 import com.linln.component.shiro.ShiroUtil;
 import com.linln.modules.system.domain.User;
+import com.linln.modules.system.enums.ActionLogEnum;
 import com.linln.modules.system.service.RoleService;
+import com.linln.modules.system.service.UserService;
+import com.linln.modules.system.service.impl.UserServiceImpl;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.LockedAccountException;
@@ -28,10 +31,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import springfox.documentation.spring.web.json.Json;
 
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
 import java.io.IOException;
 
 @Controller

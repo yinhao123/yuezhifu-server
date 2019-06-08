@@ -1,33 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="actionLog" />
-        <module name="admin" />
-        <module name="api" />
+        <module name="thymeleaf" />
+        <module name="home" />
+        <module name="shiro" />
         <module name="common" />
         <module name="devtools" />
         <module name="excel" />
-        <module name="fileUpload" />
-        <module name="jwt" />
-        <module name="shiro" />
         <module name="system" />
-        <module name="thymeleaf" />
+        <module name="actionLog" />
+        <module name="admin" />
+        <module name="jwt" />
+        <module name="fileUpload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="actionLog" target="1.8" />
       <module name="admin" target="1.8" />
-      <module name="api" target="1.7" />
       <module name="common" target="1.8" />
       <module name="component" target="1.8" />
       <module name="devtools" target="1.8" />
       <module name="excel" target="1.8" />
       <module name="fileUpload" target="1.8" />
+      <module name="home" target="1.8" />
       <module name="jwt" target="1.8" />
       <module name="modules" target="1.8" />
       <module name="shiro" target="1.8" />
@@ -35,5 +36,20 @@
       <module name="thymeleaf" target="1.8" />
       <module name="timo" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="actionLog" options="-parameters" />
+      <module name="admin" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="devtools" options="-parameters" />
+      <module name="excel" options="-parameters" />
+      <module name="fileUpload" options="-parameters" />
+      <module name="home" options="-parameters" />
+      <module name="jwt" options="-parameters" />
+      <module name="shiro" options="-parameters" />
+      <module name="system" options="-parameters" />
+      <module name="thymeleaf" options="-parameters" />
+    </option>
   </component>
 </project>

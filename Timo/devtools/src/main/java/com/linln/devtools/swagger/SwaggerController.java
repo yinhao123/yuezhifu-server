@@ -16,4 +16,10 @@ public class SwaggerController {
     public String index(){
         return "redirect:/swagger-ui.html";
     }
+
+    @GetMapping("/dev/demo")
+    @RequiresPermissions("/dev/demo")
+    public String demo(){
+        return "redirect:/swagger-ui.html";
+    }
 }

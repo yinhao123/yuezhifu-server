@@ -20,6 +20,11 @@
             <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.linln</groupId>
+            <artifactId>home</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!--开发模块，上线部署可以注释掉-->
         <dependency>
             <groupId>com.linln</groupId>
@@ -39,6 +44,11 @@
         <dependency>
             <groupId>com.linln.component</groupId>
             <artifactId>actionLog</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.component</groupId>
+            <artifactId>jwt</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>

@@ -17,6 +17,24 @@
       "type": "java.lang.Boolean",
       "sourceType": "com.linln.common.config.properties.ProjectProperties",
       "defaultValue": false
+    },
+    {
+      "name": "project.xxs.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "defaultValue": true
+    },
+    {
+      "name": "project.xxs.excludes",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "defaultValue": "\/favicon.ico,\/img\/*,\/js\/*,\/css\/*,\/lib\/*"
+    },
+    {
+      "name": "project.xxs.url-patterns",
+      "type": "java.lang.String",
+      "sourceType": "com.linln.common.config.properties.ProjectProperties$Xxs",
+      "defaultValue": "\/*"
     }
   ],
   "hints": []

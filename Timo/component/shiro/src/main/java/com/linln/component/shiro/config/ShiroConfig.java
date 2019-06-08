@@ -19,10 +19,7 @@ import javax.servlet.Filter;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 
-/**
- * @author 小懒虫
- * @date 2018/8/14
- */
+
 @Configuration
 public class ShiroConfig {
 
@@ -48,6 +45,8 @@ public class ShiroConfig {
          */
         LinkedHashMap<String, String> filterMap = new LinkedHashMap<>();
         filterMap.put("/login", "anon");
+        filterMap.put("/api/**","anon");
+        filterMap.put("/json","anon");
         filterMap.put("/logout", "anon");
         filterMap.put("/captcha", "anon");
         filterMap.put("/noAuth", "anon");
@@ -57,6 +56,7 @@ public class ShiroConfig {
         filterMap.put("/lib/**", "anon");
         filterMap.put("/favicon.ico", "anon");
         filterMap.put("/**", "userAuth");
+
 
         // 设置过滤规则
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterMap);
