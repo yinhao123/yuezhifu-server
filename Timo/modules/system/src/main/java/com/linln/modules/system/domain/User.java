@@ -5,6 +5,7 @@ import com.linln.common.enums.StatusEnum;
 import com.linln.common.utils.StatusUtil;
 import com.linln.component.excel.annotation.Excel;
 import com.linln.component.excel.enums.ExcelType;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.SQLDelete;
@@ -38,6 +39,7 @@ public class User implements Serializable {
     private Long id;
     @Excel("用户名")
     private String username;
+    @JsonIgnore
     private String password;
     private String salt;
     @Excel("昵称")

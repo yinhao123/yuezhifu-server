@@ -32,4 +32,13 @@ public class ApiUserController {
         userService.save(user);
         return "ok";
     }
+    /**
+     * 修改手机号
+     */
+    @PostMapping("/user/phone")
+    @ApiOperation("修改手机号")
+    public ResultVo updateUserPhone(@RequestParam Long id ,@RequestParam String phone)
+    {
+        return ResultVoUtil.success();
+    }
 }
