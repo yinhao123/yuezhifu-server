@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
+</head>
+<body>
+    <div class="layui-form timo-compile">
+    <form th:action="@{/goods/shopgoods/add}">
+        <input type="hidden" name="id" th:if="${shopgoods}" th:value="${shopgoods.id}">
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品名称</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="title" placeholder="请输入商品名称" th:value="${shopgoods?.title}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品介绍</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="context" placeholder="请输入商品介绍" th:value="${shopgoods?.context}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品售价</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="price" placeholder="请输入商品售价" th:value="${shopgoods?.price}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">购买次数</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="buyNumbers" placeholder="请输入购买次数" th:value="${shopgoods?.buyNumbers}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">投诉次数</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="supportNumbers" placeholder="请输入投诉次数" th:value="${shopgoods?.supportNumbers}">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">商品卖家</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="seller" placeholder="请输入商品卖家" th:value="${shopgoods?.seller}">
+            </div>
+        </div>
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">备注</label>
+            <div class="layui-input-block">
+                <textarea placeholder="请输入内容" class="layui-textarea" name="remark">[[${shopgoods?.remark}]]</textarea>
+            </div>
+        </div>
+        <div class="layui-form-item timo-finally">
+            <button class="layui-btn ajax-submit"><i class="fa fa-check-circle"></i> 保存</button>
+            <button class="layui-btn btn-secondary close-popup"><i class="fa fa-times-circle"></i> 关闭</button>
+        </div>
+    </form>
+</div>
+<script th:replace="/common/template :: script"></script>
+</body>
+</html>

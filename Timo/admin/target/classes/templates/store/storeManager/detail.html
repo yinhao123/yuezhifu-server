@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/common/template :: header(~{::title},~{::link},~{::style})">
+</head>
+<body>
+    <div class="timo-detail-page">
+        <div class="timo-detail-title">基本信息</div>
+        <table class="layui-table timo-detail-table">
+            <colgroup>
+                <col width="100px"><col>
+                <col width="100px"><col>
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>主键ID</th>
+                    <td th:text="${storeManager.id}"></td>
+                    <th>店铺名称</th>
+                    <td th:text="${storeManager.title}"></td>
+                </tr>
+                <tr>
+                    <th>店铺介绍</th>
+                    <td th:text="${storeManager.context}"></td>
+                    <th>客服QQ</th>
+                    <td th:text="${storeManager.serviceQQ}"></td>
+                </tr>
+                <tr>
+                    <th>客服微信</th>
+                    <td th:text="${storeManager.servicewechat	}"></td>
+                    <th>微信二维码</th>
+                    <td th:text="${storeManager.wechatimage}"></td>
+                </tr>
+                <tr>
+                    <th>开光状态</th>
+                    <td th:text="${storeManager.store}"></td>
+                    <th>卖家ID</th>
+                    <td th:text="${storeManager.seller}"></td>
+                </tr>
+                <tr>
+                    <th>创建者</th>
+                    <td th:text="${storeManager.createBy?.nickname}"></td>
+                    <th>更新者</th>
+                    <td th:text="${storeManager.updateBy?.nickname}"></td>
+                </tr>
+                <tr>
+                    <th>创建时间</th>
+                    <td th:text="${#dates.format(storeManager.createDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                    <th>更新时间</th>
+                    <td th:text="${#dates.format(storeManager.updateDate, 'yyyy-MM-dd HH:mm:ss')}"></td>
+                </tr>
+                <tr>
+                    <th>备注</th>
+                    <td th:text="${storeManager.remark}" colspan="3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script th:replace="/common/template :: script"></script>
+</body>
+</html>
