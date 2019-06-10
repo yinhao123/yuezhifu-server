@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
@@ -11,7 +10,7 @@
 
     <artifactId>home</artifactId>
     <packaging>jar</packaging>
-    <name>home</name>
+    <name>API管理模块</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,11 +28,7 @@
             <artifactId>common</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.linln</groupId>
-            <artifactId>admin</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+
         <!--开发模块，上线部署可以注释掉-->
         <dependency>
             <groupId>com.linln</groupId>
@@ -64,6 +59,36 @@
             <groupId>com.linln.component</groupId>
             <artifactId>fileUpload</artifactId>
             <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>order</artifactId>
+            <version>2.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>order</artifactId>
+            <version>2.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>store</artifactId>
+            <version>2.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>goods</artifactId>
+            <version>2.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.component</groupId>
+            <artifactId>jwt</artifactId>
+            <version>2.0.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

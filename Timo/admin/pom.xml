@@ -37,6 +37,26 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>order</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>goods</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>goods</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.linln.modules</groupId>
+            <artifactId>store</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
             <groupId>com.linln.component</groupId>
             <artifactId>shiro</artifactId>
             <version>${project.version}</version>

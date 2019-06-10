@@ -9,10 +9,13 @@
       <module fileurl="file://$PROJECT_DIR$/devtools/devtools.iml" filepath="$PROJECT_DIR$/devtools/devtools.iml" />
       <module fileurl="file://$PROJECT_DIR$/component/excel/excel.iml" filepath="$PROJECT_DIR$/component/excel/excel.iml" />
       <module fileurl="file://$PROJECT_DIR$/component/fileUpload/fileUpload.iml" filepath="$PROJECT_DIR$/component/fileUpload/fileUpload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/goods/goods.iml" filepath="$PROJECT_DIR$/modules/goods/goods.iml" />
       <module fileurl="file://$PROJECT_DIR$/home/home.iml" filepath="$PROJECT_DIR$/home/home.iml" />
       <module fileurl="file://$PROJECT_DIR$/component/jwt/jwt.iml" filepath="$PROJECT_DIR$/component/jwt/jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/modules.iml" filepath="$PROJECT_DIR$/modules/modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/order/order.iml" filepath="$PROJECT_DIR$/modules/order/order.iml" />
       <module fileurl="file://$PROJECT_DIR$/component/shiro/shiro.iml" filepath="$PROJECT_DIR$/component/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/store/store.iml" filepath="$PROJECT_DIR$/modules/store/store.iml" />
       <module fileurl="file://$PROJECT_DIR$/modules/system/system.iml" filepath="$PROJECT_DIR$/modules/system/system.iml" />
       <module fileurl="file://$PROJECT_DIR$/component/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/component/thymeleaf/thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/timo.iml" filepath="$PROJECT_DIR$/timo.iml" />

@@ -4,41 +4,27 @@ import com.linln.common.utils.ResultVoUtil;
 import com.linln.common.vo.ResultVo;
 import com.linln.modules.system.domain.User;
 import com.linln.modules.system.service.UserService;
-import com.linln.modules.system.service.impl.UserServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@Api(tags = "用户信息接口")
+@Api(tags = "用户信息管理")
 @RequestMapping("/api")
 public class ApiUserController {
 
     @Autowired
-    private UserServiceImpl userService;
+    private UserService userService;
 
-    @GetMapping("/user/{id}")
-    @ApiOperation(value ="用户信息查询")
-    public ResultVo getUerInfo(@PathVariable("id") long id) throws Exception{
-        User user = userService.getById(id);
-        //ResultVoUtil.success("success",user);
-        return  ResultVoUtil.success("success",user);
-    }
-
-    @PostMapping("/user/{id}")
-    @ApiOperation(value ="修改用户信息")
-    public String updateUser(User user) throws Exception{
-        userService.save(user);
-        return "ok";
-    }
-    /**
-     * 修改手机号
-     */
-    @PostMapping("/user/phone")
-    @ApiOperation("修改手机号")
-    public ResultVo updateUserPhone(@RequestParam Long id ,@RequestParam String phone)
+    @ApiOperation("获取用户信息")
+    @GetMapping("/user/{name}")
+    public ResultVo index(@PathVariable("name") String name)
     {
-        return ResultVoUtil.success();
+       User user = userService.getByName(name);
+       return ResultVoUtil.success("success",user);
     }
+
+
+
 }

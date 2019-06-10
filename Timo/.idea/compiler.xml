@@ -7,16 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="thymeleaf" />
-        <module name="home" />
-        <module name="shiro" />
-        <module name="common" />
-        <module name="devtools" />
-        <module name="excel" />
-        <module name="system" />
-        <module name="actionLog" />
-        <module name="admin" />
         <module name="jwt" />
+        <module name="excel" />
+        <module name="home" />
+        <module name="devtools" />
+        <module name="thymeleaf" />
+        <module name="goods" />
+        <module name="shiro" />
+        <module name="order" />
+        <module name="admin" />
+        <module name="actionLog" />
+        <module name="store" />
+        <module name="system" />
+        <module name="common" />
         <module name="fileUpload" />
       </profile>
     </annotationProcessing>
@@ -28,10 +31,13 @@
       <module name="devtools" target="1.8" />
       <module name="excel" target="1.8" />
       <module name="fileUpload" target="1.8" />
+      <module name="goods" target="1.8" />
       <module name="home" target="1.8" />
       <module name="jwt" target="1.8" />
       <module name="modules" target="1.8" />
+      <module name="order" target="1.8" />
       <module name="shiro" target="1.8" />
+      <module name="store" target="1.8" />
       <module name="system" target="1.8" />
       <module name="thymeleaf" target="1.8" />
       <module name="timo" target="1.8" />
@@ -45,9 +51,12 @@
       <module name="devtools" options="-parameters" />
       <module name="excel" options="-parameters" />
       <module name="fileUpload" options="-parameters" />
+      <module name="goods" options="-parameters" />
       <module name="home" options="-parameters" />
       <module name="jwt" options="-parameters" />
+      <module name="order" options="-parameters" />
       <module name="shiro" options="-parameters" />
+      <module name="store" options="-parameters" />
       <module name="system" options="-parameters" />
       <module name="thymeleaf" options="-parameters" />
     </option>

@@ -16,5 +16,8 @@
 
     <modules>
         <module>system</module>
+        <module>order</module>
+        <module>goods</module>
+        <module>store</module>
     </modules>
 </project>
